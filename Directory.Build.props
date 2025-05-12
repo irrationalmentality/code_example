@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <!--see https://github.com/andrewlock/StronglyTypedId#preserving-usages-of-the-stronglytypedid-attribute -->
+    <DefineConstants>STRONGLY_TYPED_ID_USAGES</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StronglyTypedId" Version="1.0.0-beta08" >
+      <!--<PrivateAssets>all</PrivateAssets> comment out because dotnet publish does not copy with this settings-->
+    </PackageReference>
+    <AssemblyAttribute Include="StronglyTypedIds.StronglyTypedIdDefaults" >
+      <_Parameter1>StronglyTypedIds.Template.Int</_Parameter1>
+      <_Parameter1_IsLiteral>true</_Parameter1_IsLiteral>
+      <_Parameter2>"int"</_Parameter2>
+      <_Parameter2_IsLiteral>true</_Parameter2_IsLiteral>
+    </AssemblyAttribute>
+    <AdditionalFiles Include="..\..\..\csharp_templates\*.typedid" >
+      <Visible>false</Visible>
+    </AdditionalFiles>
+  </ItemGroup>
+
+</Project>

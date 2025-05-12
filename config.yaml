@@ -1,0 +1,3 @@
+ConnectionStrings:
+  FinanceDb: Host=host.docker.internal;Port=5432;Database=finance;Username=postgres;Password=postgres
+  ViDb: Host=host.docker.internal;Port=5432;Database=vi;Username=postgres;Password=postgres

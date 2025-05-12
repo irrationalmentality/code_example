@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Code.Example.Finances.App.Data</AssemblyName>
+    <RootNamespace>Code.Example.Finances.App.Data</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.UseCases.AdminScope\Core.UseCases.AdminScope.csproj" />
+    <ProjectReference Include="..\Core.UserCases.UserScope\Core.UserCases.UserScope.csproj" />
+  </ItemGroup>
+
+</Project>
